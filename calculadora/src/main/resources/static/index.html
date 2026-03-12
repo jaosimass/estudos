@@ -178,6 +178,8 @@
 
     document.addEventListener("keydown", function(event) {
 
+        event.preventDefault();
+
     if (!isNaN(event.key)) {
         appendNumber(event.key);
     }
